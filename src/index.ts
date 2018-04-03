@@ -92,9 +92,10 @@ export class PrettierTransform extends Transform {
   }
 }
 
-const prettierPlugin = (
+export const prettierPlugin = (
   prettierOptions: any,
   pluginOptions: IPrettierPluginOptions | undefined,
 ) => new PrettierTransform(prettierOptions, pluginOptions);
 
+export default prettierPlugin;
 module.exports = prettierPlugin;
